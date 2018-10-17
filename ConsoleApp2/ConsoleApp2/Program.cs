@@ -29,6 +29,13 @@ namespace ConsoleApp2
             Console.Read();
         }
 
+        /// <summary>
+        /// Run multiple threads synchronously 
+        /// Pass the output of one thread to other
+        /// Handle task cancellation
+        /// </summary>
+        /// <param name="maxNumber"></param>
+        /// <returns></returns>
         static async Task RunThreads(int maxNumber)
         {
             var tokenSource = new CancellationTokenSource();
