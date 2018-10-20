@@ -1,0 +1,2 @@
+Interlocked has support at the CPU level, which can do the atomic operation directly.
+For example, Interlocked.Increment is effectively an XADD, and compare and swap (ie: Interlocked.CompareExchange) is supported via the CMPXCHG instructions (both with a LOCK prefix).
